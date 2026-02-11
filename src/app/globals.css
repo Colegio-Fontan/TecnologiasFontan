@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --fontan-violet: #50007D;
+  --fontan-cyan: #00C8FF;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-slate-900 bg-white;
+  }
+}
+
+@layer utilities {
+  .text-fontan-violet {
+    color: var(--fontan-violet);
+  }
+
+  .bg-fontan-violet {
+    background-color: var(--fontan-violet);
+  }
+
+  .text-fontan-cyan {
+    color: var(--fontan-cyan);
+  }
+
+  .bg-fontan-cyan {
+    background-color: var(--fontan-cyan);
+  }
+}
