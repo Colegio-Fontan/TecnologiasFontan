@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Colegio Fontan - Hub de Aplicaciones",
+  title: "Colegio Fontan - Hub de aplicaciones",
   description: "Acceso centralizado para empleados del Colegio Fontan",
 };
 

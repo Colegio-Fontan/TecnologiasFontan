@@ -17,7 +17,7 @@ import {
 
 const tools = [
   {
-    title: "Fontan Digital",
+    title: "Fontan digital",
     url: "https://plataformafontan.azurewebsites.net",
     icon: <Monitor className="w-14 h-14" />,
     smallIcon: <Monitor className="w-8 h-8" />,
@@ -25,7 +25,7 @@ const tools = [
     color: "#50007D",
   },
   {
-    title: "Gestión Inventario",
+    title: "Gestión inventario",
     url: "https://gestioninventariofontan.vercel.app/",
     icon: <ClipboardList className="w-14 h-14" />,
     smallIcon: <ClipboardList className="w-8 h-8" />,
@@ -33,7 +33,7 @@ const tools = [
     color: "#00C8FF",
   },
   {
-    title: "Horario Sistema",
+    title: "Horario sistema",
     url: "https://horariosistemafontan.online",
     icon: <Clock className="w-14 h-14" />,
     smallIcon: <Clock className="w-8 h-8" />,
@@ -41,7 +41,7 @@ const tools = [
     color: "#50007D",
   },
   {
-    title: "Software Procesos",
+    title: "Software procesos",
     url: "https://software-procesos-fontan.vercel.app",
     icon: <Layers className="w-14 h-14" />,
     smallIcon: <Layers className="w-8 h-8" />,
@@ -57,7 +57,7 @@ const tools = [
     color: "#50007D",
   },
   {
-    title: "GPT Informes",
+    title: "GPT informes",
     url: "https://chatgpt.com/g/g-692094896bd08191a0bf90946803af89-generador-informes-sistema-fontan",
     icon: <MessageSquare className="w-14 h-14" />,
     smallIcon: <MessageSquare className="w-8 h-8" />,
@@ -82,9 +82,9 @@ export default function Home() {
           <div className="flex items-center gap-4">
             <img src="/Logo.png" alt="Fontan" className="h-10 w-auto" />
             <div className="w-[1px] h-6 bg-slate-200" />
-            <h1 className="text-lg font-black tracking-tighter text-fontan-violet uppercase">Ecosistema Fontan</h1>
+            <h1 className="text-lg font-black tracking-tighter text-fontan-violet">Ecosistema Fontan</h1>
           </div>
-          <div className="hidden md:flex items-center gap-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
+          <div className="hidden md:flex items-center gap-8 text-[10px] font-black tracking-[0.2em] text-slate-400">
             <span className="text-fontan-violet underline decoration-fontan-cyan decoration-2 underline-offset-4">Directorio</span>
             <span className="hover:text-fontan-cyan cursor-pointer transition-all">Soporte TI</span>
             <span className="hover:text-fontan-cyan cursor-pointer transition-all">Comunidad</span>
@@ -115,12 +115,12 @@ export default function Home() {
                   <motion.div
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 text-[10px] font-black uppercase tracking-widest text-slate-500"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-100 text-[10px] font-black tracking-widest text-slate-500"
                   >
                     <span className="w-2 h-2 rounded-full bg-fontan-cyan animate-pulse" />
                     Software Institucional
                   </motion.div>
-                  <h2 className="text-5xl md:text-7xl font-black tracking-tight text-slate-950 uppercase leading-none">
+                  <h2 className="text-5xl md:text-7xl font-black tracking-tight text-slate-950 leading-none">
                     {tools[current].title}
                   </h2>
                   <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed max-w-lg">
@@ -130,7 +130,7 @@ export default function Home() {
                     <a
                       href={tools[current].url}
                       target="_blank"
-                      className="px-10 py-5 bg-fontan-violet text-white rounded-2xl font-bold uppercase tracking-widest text-xs shadow-xl shadow-fontan-violet/30 hover:shadow-fontan-violet/50 transition-all flex items-center gap-3 active:scale-95"
+                      className="px-10 py-5 bg-fontan-violet text-white rounded-2xl font-bold tracking-widest text-xs shadow-xl shadow-fontan-violet/30 hover:shadow-fontan-violet/50 transition-all flex items-center gap-3 active:scale-95"
                     >
                       Entrar a la aplicación
                       <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -174,9 +174,9 @@ export default function Home() {
         {/* Quick Access Grid */}
         <section className="max-w-7xl mx-auto space-y-12">
           <div className="flex flex-col items-center text-center space-y-3">
-            <h3 className="text-3xl font-black uppercase tracking-tighter text-slate-900 leading-none">Acceso rápido</h3>
+            <h3 className="text-3xl font-black tracking-tighter text-slate-900 leading-none">Acceso rápido</h3>
             <div className="w-16 h-1 bg-fontan-cyan rounded-full" />
-            <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">Selecciona la plataforma que deseas utilizar</p>
+            <p className="text-[10px] font-bold tracking-[0.3em] text-slate-400">Selecciona la plataforma que deseas utilizar</p>
           </div>
 
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
@@ -197,7 +197,7 @@ export default function Home() {
                   {tool.smallIcon}
                 </div>
                 <div className="text-center space-y-2">
-                  <h4 className="text-lg font-black uppercase tracking-tight text-slate-900 group-hover:text-fontan-violet transition-colors">
+                  <h4 className="text-lg font-black tracking-tight text-slate-900 group-hover:text-fontan-violet transition-colors">
                     {tool.title}
                   </h4>
                   <p className="text-xs text-slate-400 font-medium leading-tight max-w-[200px] opacity-0 group-hover:opacity-100 transition-opacity">
@@ -221,7 +221,7 @@ export default function Home() {
               Gestionamos el futuro de la educación con tecnología de alto impacto institucional.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-12 md:gap-24 text-[10px] font-black uppercase tracking-[0.3em] text-slate-600">
+          <div className="grid grid-cols-2 gap-12 md:gap-24 text-[10px] font-black tracking-[0.3em] text-slate-600">
             <div className="space-y-4 text-center md:text-left">
               <span className="text-slate-400">Portal</span>
               <ul className="space-y-2">
@@ -240,7 +240,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="max-w-7xl mx-auto pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] font-black uppercase tracking-[0.4em] text-slate-700">
+        <div className="max-w-7xl mx-auto pt-10 flex flex-col md:flex-row justify-between items-center gap-6 text-[9px] font-black tracking-[0.4em] text-slate-700">
           <span>&copy; {new Date().getFullYear()} Colegio Fontan - Colombia</span>
           <div className="flex items-center gap-3">
             <span className="w-1.5 h-1.5 rounded-full bg-slate-800" />
